@@ -8,6 +8,7 @@ import java.util.stream.Stream;
  * 冒泡排序：时间复杂度O(n*n);空间复杂度O(1)
  */
 public class BubblingSort {
+
     public static void main(String[] args) {
         int[] array = new int[20];
         Random random = new Random();

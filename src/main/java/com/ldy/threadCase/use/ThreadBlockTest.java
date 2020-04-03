@@ -1,4 +1,4 @@
-package com.ldy.threadTest.use;
+package com.ldy.threadCase.use;
 
 /**
  * Create by liudongyang8 on 2020/4/3

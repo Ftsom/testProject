@@ -1,4 +1,4 @@
-package com.ldy.sort;
+package com.ldy.sortCase;
 
 import java.util.*;
 import java.util.stream.Stream;

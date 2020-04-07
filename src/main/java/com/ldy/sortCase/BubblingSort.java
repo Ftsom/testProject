@@ -1,4 +1,4 @@
-package com.ldy.sort;
+package com.ldy.sortCase;
 
 import com.ldy.util.RandomUtils;
 

@@ -1,5 +1,7 @@
 package com.ldy.sort;
 
+import com.ldy.util.RandomUtils;
+
 import java.util.*;
 import java.util.stream.Stream;
 
@@ -10,11 +12,7 @@ import java.util.stream.Stream;
 public class BubblingSort {
 
     public static void main(String[] args) {
-        int[] array = new int[20];
-        Random random = new Random();
-        for (int i = 0; i < 20; i++) {
-            array[i] = random.nextInt(100);
-        }
+        int[] array = RandomUtils.getRandomIntRange(20);
         Stream.of(array).forEach(d -> System.out.print(Arrays.toString(d) + ","));
         //外层控制循环次数
         for (int k = 0; k < array.length; k++) {

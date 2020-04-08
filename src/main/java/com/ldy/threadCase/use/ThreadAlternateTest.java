@@ -80,6 +80,7 @@ public class ThreadAlternateTest {
                     System.out.println(Thread.currentThread().getName() + " : " + k);
                     k++;
                     condition.signal();
+                    Thread.sleep(2000);
                     condition.await();
                 } catch (InterruptedException e) {
                     e.printStackTrace();

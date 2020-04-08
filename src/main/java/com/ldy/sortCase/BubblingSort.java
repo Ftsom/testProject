@@ -8,6 +8,7 @@ import java.util.stream.Stream;
 /**
  * Created by liudongyang on 2020/4/1
  * 冒泡排序：时间复杂度O(n*n);空间复杂度O(1)
+ * 操作：相邻比较，每次挑选出最大放置末尾
  */
 public class BubblingSort {
 

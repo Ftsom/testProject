@@ -8,6 +8,7 @@ import java.util.stream.Stream;
 /**
  * Created by liudongyang on 2020/4/2
  * 选择排序：时间复杂度O(n*n);空间复杂度O(1)
+ * 操作：每次选择最小的放到位置i上
  */
 public class ChoiceSort {
     public static void main(String[] args) {

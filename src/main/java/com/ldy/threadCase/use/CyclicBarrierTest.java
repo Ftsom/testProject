@@ -7,9 +7,7 @@ import java.util.concurrent.CyclicBarrier;
  * Create by liudongyang8 on 2020/4/9
  */
 public class CyclicBarrierTest {
-    private static CyclicBarrier cycleBarrier = new CyclicBarrier(2, () -> {
-        System.out.println("------------last task over--------------");
-    });
+    private static CyclicBarrier cycleBarrier = new CyclicBarrier(2, () -> System.out.println("------------last task over--------------"));
 
     public static void main(String[] args) {
         new Thread(() -> {

@@ -1,4 +1,4 @@
-package com.ldy.threadCase.use;
+package com.ldy.lockCase;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -6,6 +6,7 @@ import java.util.concurrent.Semaphore;
 
 /**
  * Create by liudongyang8 on 2020/4/9
+ * 信号量：控制执行体的线程执行数量；
  */
 public class SemaphoreTest {
     private static SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
@@ -14,7 +15,7 @@ public class SemaphoreTest {
     public static void main(String[] args) {
         SemaphoreTest semaphoreTest = new SemaphoreTest();
         for (int i = 0; i < 10; i++) {
-            new Thread(() -> semaphoreTest.doThing()).start();
+            new Thread(semaphoreTest::doThing).start();
         }
     }
 

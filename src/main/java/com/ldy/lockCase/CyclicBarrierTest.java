@@ -1,10 +1,11 @@
-package com.ldy.threadCase.use;
+package com.ldy.lockCase;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
 /**
  * Create by liudongyang8 on 2020/4/9
+ * 栅栏：阻塞一组线程直到某个事件的发生。一组线程共同到达一个栅栏后，继续执行；
  */
 public class CyclicBarrierTest {
     private static CyclicBarrier cycleBarrier = new CyclicBarrier(2, () -> System.out.println("------------last task over--------------"));

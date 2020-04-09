@@ -1,9 +1,10 @@
-package com.ldy.threadCase.use;
+package com.ldy.lockCase;
 
 import java.util.concurrent.CountDownLatch;
 
 /**
  * Create by liudongyang8 on 2020/4/9
+ * 闭锁：某一线程等待，其他线程特定操作结束后，继续执行；
  */
 public class CountDownLatchTest {
     private static CountDownLatch countDownLatch = new CountDownLatch(2);

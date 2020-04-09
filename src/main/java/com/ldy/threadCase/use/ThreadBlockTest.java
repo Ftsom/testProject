@@ -5,11 +5,15 @@ package com.ldy.threadCase.use;
  * 线程阻塞状态：sleep() / wait() / join() / IO阻塞 / synchronized
  */
 public class ThreadBlockTest implements Runnable {
+    final Object object = new Object();
     @Override
     public void run() {
         System.out.println("child thread is interrupt: " + Thread.currentThread().isInterrupted());
         try {
-            Thread.sleep(5000);
+            synchronized (object) {
+                object.wait();
+            }
+//            Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

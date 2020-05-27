@@ -33,7 +33,6 @@ public class CountDownLatchTest {
         }).start();
 
         try {
-            System.out.println("--------------main will await-------------");
             countDownLatch.await();
         } catch (InterruptedException e) {
             e.printStackTrace();

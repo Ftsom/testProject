@@ -3,7 +3,7 @@ package com.ldy.sortCase;
 /**
  * Create by liudongyang8 on 2020/5/28
  */
-public class HebinNList {
+public class MergeNList {
     public static void main(String[] args) {
         ListNode listNode1 = new ListNode(1);
         ListNode listNode2 = new ListNode(3);
@@ -30,7 +30,7 @@ public class HebinNList {
             result = mergeTwoList(result, listNode);
         }
 
-        printTest(result);
+        ListNode.printListNode(result);
     }
 
     public static ListNode mergeTwoList(ListNode l1, ListNode l2) {
@@ -48,21 +48,5 @@ public class HebinNList {
         }
         pre.next = l1 == null ? l2 : l1;
         return preHead.next;
-    }
-
-    public static void printTest(ListNode head) {
-        while (head != null) {
-            System.out.print(head.val + " -> ");
-            head = head.next;
-        }
-    }
-
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
     }
 }

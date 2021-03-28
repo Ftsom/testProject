@@ -21,8 +21,11 @@ public class ThreadCallable implements Callable<Long> {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         ThreadCallable threadCallable = new ThreadCallable();
+        //创建Task
         FutureTask<Long> futureTask = new FutureTask<>(threadCallable);
+        //开始线程
         new Thread(futureTask).start();
+        //阻塞获取线程结果
         System.out.println(futureTask.get());
         System.out.println(Thread.currentThread().getName());
     }

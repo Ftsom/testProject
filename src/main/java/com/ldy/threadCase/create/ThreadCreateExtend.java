@@ -2,6 +2,7 @@ package com.ldy.threadCase.create;
 
 /**
  * Create by liudongyang8 on 2020/4/3
+ * 创建线程-继承Thread
  */
 public class ThreadCreateExtend extends Thread {
 
